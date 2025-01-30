@@ -17,6 +17,10 @@ export class HomePage {
     this.nasaService.getImageOfTheDay().subscribe((data) => {
       this.imageData = data;
     });
+
+    this.nasaService.getImage(YYYY-MM-DD).subscribe((data) => {
+      this.imageData = data;
+    });
   }
 
 }
